@@ -1,0 +1,75 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Entry 11 &#8212; John Hunter Excellence in Plotting Contest 2018  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="entry-11">
+<h1>Entry 11<a class="headerlink" href="#entry-11" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="mission-to-earth-s-neighbouring-asteroids">
+<h2>Mission to Earth’s neighbouring asteroids<a class="headerlink" href="#mission-to-earth-s-neighbouring-asteroids" title="Permalink to this headline">¶</a></h2>
+<p>Luís F. Simões</p>
+<video width=640 controls><source src="entry11.mp4"/></video><p>If the video does not play above, try downloading <a class="reference external" href="entry11.mp4">from this link</a>.</p>
+<p>Visualization of a spacecraft trajectory for a mission of exploration to 17 asteroids flying in the vicinity of Earth’s orbit.</p>
+<p>The Earth is seen here in blue, and the spacecraft as a red cross. A trail remains behind the spacecraft, showing its path over the preceding year. White portions of this trail correspond to rendezvous legs (spacecraft is flying towards a new asteroid), and red ones to self-fly-by legs (spacecraft is flying in the asteroid’s vicinity, to launch a “penetrator” towards it). The horizontal dotted lines on the 2D plots correspond to the Earth’s values: a distance of 1 AU to the Sun, and 0 degrees declination, respectively. In these plots we see how the spacecraft’s orbit compares to the Earth’s.</p>
+<p>This trajectory is a Lambert model solution to the trajectory design problem defined in GTOC5, the 5th edition of the Global Trajectory Optimization Competition. In it, competitors were asked to assemble a mission capable of exploring as many asteroids as possible (from among a database of 7075), given a set of spacecraft and mission constraints.</p>
+<p>The trajectory seen here was assembled in the course of the research described in the paper:</p>
+<blockquote>
+<div>Simões L.F., Izzo D., Haasdijk E., Eiben A.E. (2017) Multi-rendezvous Spacecraft Trajectory Optimization with Beam P-ACO. In: Hu B., López-Ibáñez M. (eds) Evolutionary Computation in Combinatorial Optimization. EvoCOP 2017. Lecture Notes in Computer Science, vol 10197. Springer, Cham</div></blockquote>
+<p>The code to replicate this research was uploaded to GitHub at:</p>
+<p><a class="reference external" href="https://github.com/lfsimoes/beam_paco__gtoc5">https://github.com/lfsimoes/beam_paco__gtoc5</a></p>
+<p>It offers an open source implementation of the problem model developed for the competition by the team from the European Space Agency.</p>
+<p>Although the GTOC competitions have over the years provided multiple hard benchmark problems in mission analysis, very few open implementations of solutions have emerged from it. This release aimed to help fill that gap. At the same time, to the optimization community this code offers a benchmark black-box combinatorial optimization problem, having a set of challenging features: multi-objective, bilevel, dynamic, constrained, etc. The exposed interface hides the complexities of orbital mechanics, so the code may be used by non-experts in the field.</p>
+<p>Along with the code, a Jupyter notebook was developed (link below) for generating trajectory videos. It was created to visualize the best trajectory found in the course of this research (currently, the best known from this model of the problem), and to provide a way for others who might follow up on this work to visualize the trajectories they create.</p>
+<p>(NOTE: the .mp4 file uploaded here has higher quality (1080p 60fps) than the version on YouTube.)</p>
+<p><strong>Code and data:</strong> <a class="reference external" href="https://nbviewer.jupyter.org/github/lfsimoes/beam_paco__gtoc5/blob/master/traj_video.ipynb">1</a></p>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Thomas Caswell, Michael Droettboom, Nelle Varoquaux.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/entry11.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

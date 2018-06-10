@@ -1,0 +1,77 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Entry 26 &#8212; John Hunter Excellence in Plotting Contest 2018  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="entry-26">
+<h1>Entry 26<a class="headerlink" href="#entry-26" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="extracting-tidal-components-from-modeled-sea-surface-height">
+<h2>Extracting tidal components from modeled Sea Surface Height<a class="headerlink" href="#extracting-tidal-components-from-modeled-sea-surface-height" title="Permalink to this headline">¶</a></h2>
+<p>Filipe Fernandes</p>
+<img width=640 src="entry26.png"/><p># Extracting tidal components from modeled Sea Surface Height</p>
+<p>The left panel is shows the Sea Surface Height (SSH) mean for the modeled period from
+2016-05-02 00:00:00 to 2016-05-28 18:00:00, with a time interval of 3 hours (total of 200 points in time).
+The spatial resolution is 482 x 402, which means we have to 193764 time-series with 200 points each for SSH.</p>
+<p>We are looking for the tidal components, so we need to perform an harmonic analysis on those time-series.
+This an [embarrassingly parallel](<a class="reference external" href="https://en.wikipedia.org/wiki/Embarrassingly_parallel">https://en.wikipedia.org/wiki/Embarrassingly_parallel</a>) where a naive loop would take ~4 hours to run the analysis on all those time series.
+Thanks to <cite>concurrent.futures</cite> we can use the <cite>ThreadPoolExecutor</cite> to submit the tasks to different cores and get a speed up of approximately the number of cores available in the machine. The notebook was executed in a 4 core machine which reduced the analysis time down to ~1 hour.</p>
+<p>In the left panel we have the average SSH, where we can find some features like the loop-current, the Gulf Stream, and many eddies due to the ocean’s variability.
+It is virtually impossible to understands tides looking at the SSH alone.</p>
+<p>The panel on the right is the result of the harmonic analysis.
+We are plotting only the [principal lunar semi-diurnal component (M2)](<a class="reference external" href="https://en.wikipedia.org/wiki/Tide">https://en.wikipedia.org/wiki/Tide</a>).
+The colorbar is truncated up to 0.7 meters to make it easier to visualize the deep ocean variability, otherwise the bay amplification from regions like the Gulf of Maine would hinder the variability on the deep ocean.
+It is possible to find [an amphidromic point](<a class="reference external" href="https://en.wikipedia.org/wiki/Amphidromic_point">https://en.wikipedia.org/wiki/Amphidromic_point</a>) near Puerto Rico,
+from there we can follow the [tidal wave](<a class="reference external" href="https://xkcd.com/1010/">https://xkcd.com/1010/</a>) crests and troughs all the way to the coast. At the coast we can identify some bay amplification points, like the Gulf of Maine, where the largest tides in the world are found.</p>
+<p>These two images are relatively simple but show the power of python for data analysis.</p>
+<p><strong>Code and data:</strong> <a class="reference external" href="https://drive.google.com/open?id=1hfvovYhX-0pfflNDjNmKC5Y1nA64V8I9">1</a>, <a class="reference external" href="http://nbviewer.jupyter.org/gist/ocefpaf/fd5ddf9fc825db80bff7611fc166fa1e">2</a></p>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Thomas Caswell, Michael Droettboom, Nelle Varoquaux.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/entry26.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,100 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Entry 21 &#8212; John Hunter Excellence in Plotting Contest 2018  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="entry-21">
+<h1>Entry 21<a class="headerlink" href="#entry-21" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="interactive-crystal-melting">
+<h2>Interactive Crystal Melting<a class="headerlink" href="#interactive-crystal-melting" title="Permalink to this headline">¶</a></h2>
+<p>Malcolm Ramsay</p>
+<img width=640 src="entry21.png"/><p>Solid materials comprise nearly everything we interact with, yet we have little
+theoretical understanding of their formation. I use simulations to research the
+process of crystal melting to develop a grammar describing the motions that
+take place. I use 2D particles shaped like Mickey Mouse’s head, which has three
+possible crystal structures: <em>p2</em>, <em>p2gg</em> and <em>pg</em> — named for their
+symmetry.</p>
+<p>The key feature distinguishing the crystals from a liquid is well defined
+orientational alignment. To visually emphasise orientational alignment,
+I encode particle orientation with hue while keeping apparent lightness
+constant since orientations are equivalent. This orientational encoding reveals
+the layering of orientational alignment within each of the three crystal
+structures. Additionally, the order of the crystal contrasts with the
+randomness of the liquid. In using hue to encode orientation, each of the
+crystals and the liquid are visually separable.</p>
+<p>Knowing the crystal structures can be identified visually, I needed a tool for
+the automated classification of each structure. This task is perfect for
+machine learning. To help prevent overfitting of the test dataset, integrated
+into the visualisation is a tool to compare the accuracy of classification
+algorithms, which was instrumental in identifying that my first machine
+learning algorithm was memorising neighbours instead of recognising structure.
+The particles classified as liquid are lighter than those classified as
+crystal, having the effect of emphasising crystalline regions which are the
+focus of my research.</p>
+<p>In distinguishing between the liquid and crystal regions, I am able to compare
+different algorithms as they track the melting of a crystal. The algorithms
+I am comparing are; <em>Orient</em> which is a typical algorithm in the field,
+<em>Decision Tree</em> which is a trained scikit-learn decision tree, <em>KNN Model</em>
+which is a trained scikit-learn K-Nearest Neighbours classifier, and <em>Num
+Neighs</em> which uses the number of Voronoi neighbours as a classifier. Each
+algorithm has different classification errors, while the <em>KNN Model</em> provides
+the most accurate tracking of melting for all crystals.</p>
+<p>This visualisation tool is possible because of the amazing work of everyone
+involved with Bokeh. The Bokeh server provides a simple interface
+between the visualisation and a python runtime. I have leveraged this interface
+to allow real time processing of raw datasets; providing an interface to
+Terabytes of raw simulation data.</p>
+<p>The attached image is a screenshot of the figure in action. Instructions for setting up the environment and running the figure are included in the README of the data files.</p>
+<p>The data included in the demonstration shows the transition from the crystal not changing at low temperatures, to the melting at higher temperatures. This was chosen to be representative of the functionality of the figure.</p>
+<p><strong>Code and data:</strong> <a class="reference external" href="https://drive.google.com/open?id=1YKpXGRg8GzZZh64_YNo0PmivuM8UqqgZ">1</a></p>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Thomas Caswell, Michael Droettboom, Nelle Varoquaux.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/entry21.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

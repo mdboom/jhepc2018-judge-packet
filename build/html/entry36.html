@@ -1,0 +1,71 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Entry 36 &#8212; John Hunter Excellence in Plotting Contest 2018  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="entry-36">
+<h1>Entry 36<a class="headerlink" href="#entry-36" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="temperature-dissolved-oxygen-and-discharge-measured-at-water-lab-site-of-logan-river">
+<h2>Temperature, dissolved oxygen, and discharge measured at Water Lab site of Logan River.<a class="headerlink" href="#temperature-dissolved-oxygen-and-discharge-measured-at-water-lab-site-of-logan-river" title="Permalink to this headline">¶</a></h2>
+<p>Muhammad Rezaul Haider</p>
+<img width=640 src="entry36.png"/><p>Using Statistical Package R to Access and Visualize Hydrologic Data from Web Services.</p>
+<p>With the advent of wireless technology and in situ sensors, it has been customary to collect hydrologic data at higher temporal and spatial resolutions (Jones et al., 2015). Thus, there is an increasing demand for automated tool for quick retrieval, analysis, and visualization of hydrologic data in order to convey message to concerned authority for speedy management action. River temperature is a master variable for many aquatic processes (Cardenas et al., 2014). The statistical package R comes with different data retrieval packages to retrieve data from different sources and excellent plotting functions for visualization of data. This report demonstrates the use of R to retrieve data from the web services.</p>
+<p>Then data visualization was provided with some plots.</p>
+<p>WaterML package of R (codes attached) was used to retrieve time-series data measured at the Utah Water Research Laboratory west bridge on the Logan River GAMUT (Gradients Along Mountain to Urban Transitions) network, Utah, USA. Information on the variables measured and site was obtained by using “GetVariables” and “GetSites” functions. This site has a site code of “LR_WaterLab_AA”, and is located in Cache County. Out of the many variables, quality controlled (Quality control level = 1) water temperature (iutah:WaterTemp_EXO), dissolved oxygen (iutah:ODO), and derived discharge data (Quality control level = 2) for the year 2017 were first fetched from the web interface by using “GetValues”, and “subset” function.  Then these time series were plotted using the “plot” command. From the trend, we see that with increase in water temperature there is a decease in dissolved oxygen. Discharge is the highest in the month of June. The maximum, minimum, and mean temperature for the year 2017 were found to be 15.84°C, -0.06°C, and 7.75°C, respectively. Temperature of the Logan River was well below 20°C all the year in 2017 thus meeting the state water quality standard (Water Quality Standards. (2016).</p>
+<p>This report demonstrates the use of R to automate the retrieving data from web interface, their analysis, and reproducible visualizations of data. It’s a powerful tool for the hydrologists to retrieve bulk volume of data from different web sources and producing nice visualizations.</p>
+<p>References:</p>
+<p>Cardenas, M. B., Doering, M., Rivas, D.S., Galdeano, C., and Neilson B. T. (2014). Analysis of the temperature dynamics of a proglacial river using time-lapse thermal imaging and energy balance modeling. Journal of Hydrology, 519, 1963–1973. <a class="reference external" href="http://dx.doi.org/10.1016/j.jhydrol.2014.09.079">http://dx.doi.org/10.1016/j.jhydrol.2014.09.079</a>.</p>
+<p>Jones, A. S., Horsburgh J. S., Reeder S.L., Ramirez M, and Caraballo J. (2015). A data management and publication workflow for a large-scale, heterogeneous sensor network. Environ Monit Assess (2015) 187:348. DOI 10.1007/s10661-015-4594-3.</p>
+<p>Water Quality Standards. (2016). Classification of Waters of the State. <a class="reference external" href="http://www.rules.utah.gov/publicat/code/r317/r317-002.htm#E15">http://www.rules.utah.gov/publicat/code/r317/r317-002.htm#E15</a></p>
+<p><strong>Code and data:</strong> <a class="reference external" href="https://drive.google.com/open?id=1kjXcIiiEzgG2PK7eOr1xOJm5JRsD5kDS">1</a></p>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Thomas Caswell, Michael Droettboom, Nelle Varoquaux.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/entry36.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

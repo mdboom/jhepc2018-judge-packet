@@ -1,0 +1,20 @@
+Entry 10
+=========
+
+Bubbles in the young Universe
+------------------------------------------------------------
+
+Enrico Garaldi
+
+.. raw:: html
+
+    <video width=640 controls><source src="entry10.mp4"/></video>
+
+If the video does not play above, try downloading `from this link <entry10.mp4>`__.
+
+
+Soon after the first stars formed, less than 1 billion years after the Big Bang, the Universe experienced what is known as the Epoch of Reionization (EoR). In this period of time, the gas filling the space between galaxies (called inter-galactic medium, or IGM) was transformed from neutral into a highly-ionized plasma. This is the last global phase transition in the history of the Universe and radically changed the environment where galaxies formed, with lasting consequences on their growth. Studying the EoR is very challenging and many questions remains open. Most importantly, the sources fueling the reionization of the IGM are still under debate. The movie shows a numerical simulations where this process is driven by the radiation emitted by quasars, i.e. very bright black holes swollowing the surrounding material. The color represents the fraction of neutral Hydrogen (HI) in the IGM, one of the main and most basic observables linked to the reionization of the Universe. The ionizing radiation emitted by quasars carves into the IGM large bubbles that grows around the central source. However, quasars can turn off when they have swallowed all the available material. In this case, the gas in the surrounding IGM starts to recombine and to become neutral once again, until the quasar lights on again. This stochastic process continues until the percolation period, when the different ionized bubbles grow until they merge and the Universe becomes fully ionized. At this stage, the radiation from the quasars can travel freely and therefore a radiation background comes into being. Therefore, the IGM is exposed to the radiation coming from multiple sources that keeps it constantly ionized, regardless of the lifecycle of single quasars. However, the fluctuations in the radiation field produced by the stochastic activity of quasars create large scale fluctuations in this background, that influence the properties of the IGM. Changes in the overall ionized fraction can be seen in the latest part of the movie. The characteristic of the percolation epoch, as well as the post-reionization IGM, are among the most powerful tools available to constrain the properties of the Epoch of Reionization.
+
+
+
+**Code and data:** `1 <https://drive.google.com/open?id=1BI9xJGtn0DOjcpgF37Xp9BRIi0-KJkXp>`__, `2 <https://astro.uni-bonn.de/~egaraldi/EoR_data/>`__

@@ -1,0 +1,71 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Entry 23 &#8212; John Hunter Excellence in Plotting Contest 2018  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="entry-23">
+<h1>Entry 23<a class="headerlink" href="#entry-23" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="tracing-the-pathway-of-iron-through-a-negatively-charged-protein-channel">
+<h2>Tracing the pathway of iron through a negatively charged protein channel<a class="headerlink" href="#tracing-the-pathway-of-iron-through-a-negatively-charged-protein-channel" title="Permalink to this headline">¶</a></h2>
+<p>Balasubramanian Chandramouli</p>
+<video width=640 controls><source src="entry23.mp4"/></video><p>If the video does not play above, try downloading <a class="reference external" href="entry23.mp4">from this link</a>.</p>
+<p>Background:</p>
+<p>Iron plays an essential role in the catalysis of many biochemical reactions. Iron can exist in two biologically most common oxidation states, Fe2+/Fe3+. Maintaining a precise level of the required Fe2+ concentration in aerobic condition is important for cells, as it donates an electron to molecular oxygens (to become Fe3+) leading to formation of reactive oxygen species (ROS). The ROS can severely damage the cellular function. Ferritin proteins, found in most organisms, are cellular tools utilized for storing and recycling Fe2+ ions. Ferritins adopt a globular cage like structure (resembles a football). The cage is pierced by eight identical, negatively charged, channels that serve as entry routes for the Fe2+ ions to access the protein interior. The ions, thus entering, are oxidized to Fe3+ at specific sites and stored as mineral inside the cage internal cavity.</p>
+<p>Visualization context:</p>
+<p>From the molecular perspective, understanding the Fe2+ translocation through the channel constitutes the first (and necessary as well) step towards delineating ferritin functional  mechanism. To this end, the widely applied computational technique, namely molecular dynamics (MD) simulations, was used to simulate the transit motion of the Fe2+ ion via the protein channel. Such calculations are generally performed in high performance computing (HPC) facilities, and results in trajectory data (of several 100s of Gbs) depicting molecular motions at atomic level. In order to derive useful insights into the critical atomistic-interactions that influence the molecular function, dovetailing both the qualitative (molecular shapes or surface) and quantitative (properties estimated from the trajectory) informations within the data analysis framework has a paramount importance. The plot, here presented, is a typical example of such combination, obtained using the  sophisticated graphing features available in matplotlib library.</p>
+<p>Method:</p>
+<p>In short, surface for the channel forming region was obtained with an external program (EDTsurf), using a sample protein structure from the MD simulation. The mesh file, thus generated, was used to extract the vertex points and the faces. The faces are colored, according to the electrostatic potential calculated at the corresponding vertex points. Snapshots depicting the ion motion via the channel were extracted from the MD trajectory, and electrostatic energy of the ion at different positions along the channel was estimated using an in-house written script. These data were then fed to maplotlib utilities for generating the plot.</p>
+<p>Plot inference:</p>
+<p>The plot permits to decipher that the protein channel forms a narrow,constricted pore featuring a high negative charge density. This serves to both attract and facilitate the passage of the positively charged Fe2+ ion, as apparent from the pathway (static image above) or from the animation (see below) of the ion motion colored on the basis of its electrostatic energy at different positions across the channel.</p>
+<p><strong>Code and data:</strong> <a class="reference external" href="https://drive.google.com/open?id=1Y-d04pbTBCI10e7Of5MF7A_0NDX3Jvfh">1</a></p>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Thomas Caswell, Michael Droettboom, Nelle Varoquaux.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/entry23.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

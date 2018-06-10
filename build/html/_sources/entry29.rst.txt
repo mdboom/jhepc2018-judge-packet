@@ -1,0 +1,21 @@
+Entry 29
+=========
+
+Local Piezoresponse Relaxation in Individual Ferroelectric Nanoparticles of BaTiO3
+------------------------------------------------------------
+
+Tommaso Costanzo and Gabriel Caruntu
+
+.. raw:: html
+
+    <video width=640 controls><source src="entry29.mp4"/></video>
+
+If the video does not play above, try downloading `from this link <entry29.mp4>`__.
+
+
+The demand for electronic devices – like transistors and capacitors – with better efficiency, energy density, and power consumption has lead scientist to study the underlying microscopic mechanism that dictates the macroscopic properties of the materials. Atomic Force Microscopes (AFMs) are capable to capture the topography and local physical properties of the samples by using a nanometer sized tip/probe. The AFM can be operated in imaging mode to acquire topographical images, or in spectroscopic mode where a stimulus is applied at the tip and the sample response is recorded. In spectroscopic mode, the spatial variation of the response can be understood by collecting a spectral map on the grid of points. 
+     In this work, the amplitude of the tip was recorded for 222.5 milliseconds after 43 different applied bias pulses on a 60x60 spectral maps. The relaxation amplitude after each pulse is comprised of 445 points, hence the total size of the experimental data is 60x60x43x445. To visualize this 4D dataset it was first reduced by fitting the relaxation amplitude at every bias point with a Kohlrausch-Williams-Watts (KWW) function: KWW=A_0*R_0 exp⁡(t⁄τ)^β. This step effectively reduce the dataset to 60x60x43x4 where the last dimension refers to the fitted parameter of the KWW function: A_0,R_0,τ,β. Secondly, the fitted parameters (except the relaxation exponent β that was almost constant) have been shown in form of color maps, where the color represents the value of the fitted parameter, and animated across all ¬the bias pulses. In this way, the animation reveals the variation of the relaxation parameters as a function of the bias applied at every point of the spectral map.
+     The samples under investigation are BaTiO3 nanoparticles, with average size of 25 nanometers. In the topographical image, 2 regions are clearly visible: the region with darker color is a monolayer of particles, while in the brighter regions are bilayers and trilayers. From the fitting results, it is visible that at the maxima absolute values of the applied bias voltages the images of the relaxation parameters shows contrast between the regions with multiple layer of particles compared to the single layer region. This indicative of interparticles relaxation mechanisms, due to interfacial polarizations.
+
+
+**Code and data:** `1 <https://drive.google.com/open?id=1RNsrY12C3Y3WH-nc3l_PEXAc16tlrBPI>`__, `2 <For speed purposes the python script provided does not run the fitting procedure and the fitting results are provided in a separete file. However by uncommenting line 150 it is also possible to reproduce the fitting. All the data can be found here: https://drive.google.com/open?id=1IifKSWuv8BnoLOsvgIGkCJmZJsSaZlut>`__

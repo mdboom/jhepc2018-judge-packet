@@ -1,0 +1,28 @@
+Entry 27
+=========
+
+Exposing the destruction of a dwarf galaxy
+------------------------------------------------------------
+
+Maarten Breddels
+
+.. raw:: html
+
+    <video width=640 controls><source src="entry27.mp4"/></video>
+
+If the video does not play above, try downloading `from this link <entry27.mp4>`__.
+
+
+Large galaxies can shred smaller galaxies to pieces and cannibalize them, a process called galaxy merging. This process is believed to play a very important role in the formation of the spherical stellar component of our Milky Way, known as the halo.
+
+The small galaxy, known as a dwarf galaxy, will first form tidal tails, caused by the tidal field of the host galaxy. This process continues and eventually, the galaxy will be completely disrupted, unrecognizable and leaving its stars scattered around our Milky Way.
+
+This process is often visualized as a series of 2d snapshots, capturing the important events in possibly multiple 2d projections. However, this process is taking place not only in 3 dimensions but also in the time domain: 4 dimensions. To convey the whole process truthfully, from the formation of tidal tails to the complete disruption of the small galaxy, a set of 2d snapshots do not capture the richness of this process, and will hardly be convincing to non-experts. Instead, this 3d animation, which can be embedded in HTML pages for journals allows users to rotate the scene, zoom in and out, rewind and pause; a truly interactive 3d visualization.
+
+This visualization shows the result of a simulation carried out by Prof. Amina Helmi (Kapteyn Astronomical Institute), of such a small galaxy around a potential similar to our Milky Way. Each arrow represents a star in the smaller galaxy, where the arrow indicates the velocity vector (direction) and the colors indicate the velocity (magnitude). The color clearly shows stars move faster at apocenter (near the center) than at pericenter (furthest away from the center), a well know fact in dynamics, but elegantly conveyed using this visualization.
+
+It is not surprising that animations like these are not common since they were not easy to create. The new library ipyvolume (disclaimer: I am the main author), tries to make the creation of these visualizations extremely easy. By providing a matplotlib API, most users do not even need to read the documentation. The fact that ipyvolume works in the Jupyter notebook captures the current trend of (data) scientists moving to this ecosystem.
+
+
+
+**Code and data:** `1 <https://drive.google.com/open?id=1KOhWDaHk60966_DyRat_dmPAu5no4oEB>`__

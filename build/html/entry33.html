@@ -1,0 +1,65 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Entry 33 &#8212; John Hunter Excellence in Plotting Contest 2018  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="entry-33">
+<h1>Entry 33<a class="headerlink" href="#entry-33" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="finding-binding-modes-of-soluble-epoxide-hydrolase-fragments-by-molecular-simulation">
+<h2>Finding binding modes of soluble epoxide hydrolase fragments by molecular simulation<a class="headerlink" href="#finding-binding-modes-of-soluble-epoxide-hydrolase-fragments-by-molecular-simulation" title="Permalink to this headline">¶</a></h2>
+<p>Nathan M. Lim</p>
+<video width=640 controls><source src="entry33.mp4"/></video><p>If the video does not play above, try downloading <a class="reference external" href="entry33.mp4">from this link</a>.</p>
+<p>Background: My research focuses on using molecular dynamics (MD) simulations for predicting important properties related to pharmaceutical drug discovery, such as ligand binding modes and their binding affinities. In my current project,  I co-developed a novel enhanced sampling method in our toolkit called BLUES (Binding mode of Ligands Using Enhanced Sampling), which couples non-equilibrium candidate Monte Carlo (NCMC) moves within a single MD simulation. Using BLUES with MD simulations, our aim is to accelerate transitions between ligand binding modes in order to obtain the correct binding mode populations and compute their corresponding relative free energies. From here, we can rank molecules from a screen based on their calculated binding free energy and predict how molecules orient themselves when bound to the target’s binding site. These types of insights are extremely valuable for medicinal chemists during lead optimization phases where experimental data may not always be available.</p>
+<p>Figure: As part of a blind challenge from OpenEye Scientific Software, I am using BLUES to predict the binding modes and the binding free energies of a series of 47 compounds for a pharmaceutically relevant target called soluble epoxide hydrolase (sEH). In order to identify potential binding modes, BLUES with random rotational move proposals has been applied to fragment 4XH_1 over a 10ns molecular simulation. Here, the positions of the ligand heavy atoms are selected as the feature space for further analysis. A method called time-lagged independent component analysis (TICA) is then applied to extract the slow reaction coordinates. Using the first two (slowest) TICA components, the coordinates from our simulation data are transformed and projected onto the two-dimensional plane, illustrated in the figure. Using silhouette scoring, the ligand is determined to have explored 3 different binding modes (blues, pink, green) during the course of the simulation. In the figure, each simulation frame is denoted by an ‘X’ and is colored according to cluster assignments from K-means clustering. The video of the molecular simulation shows the molecule beginning in the blue binding mode and transitions several times into the pink and green binding modes via the random rotational moves proposed by BLUES. After 10ns, the pink binding mode turns out to be the most favorable binding mode. The populations of the pink, blue, green binding modes are approximately 43%, 37%, and 20% respectively. (Included supplementary video) In the same simulation time, a regular MD simulation remains stuck in the blue binding mode, confirming BLUES accelerates transitions between ligand binding modes.</p>
+<p><strong>Code and data:</strong> <a class="reference external" href="https://drive.google.com/open?id=1ne7xYj_d4jCBgONMxa6NnFy4sHUSFd62">1</a></p>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Thomas Caswell, Michael Droettboom, Nelle Varoquaux.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/entry33.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

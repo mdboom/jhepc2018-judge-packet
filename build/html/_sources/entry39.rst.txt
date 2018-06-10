@@ -1,0 +1,33 @@
+Entry 39
+=========
+
+Birthday Coincidence
+------------------------------------------------------------
+
+YS
+
+.. raw:: html
+
+    <video width=640 controls><source src="entry39.mp4"/></video>
+
+If the video does not play above, try downloading `from this link <entry39.mp4>`__.
+
+
+A simple question: “How many people do you know with the same birthday (dd/mm) as you?”
+
+Most people will have a hard time coming up with more than a couple of acquaintances with whom they share birthdays, and will consider this a remarkable coincidence for anybody.
+But given a group of n people, what is the probability that such a coincidence occurs for at least 2 people in the group? assuming a uniform distribution of births within a year it easily shown to be equal to
+
+P_2(n) = 1 - 365! / (365-n)! / 365^n,        0 <= n <= 365
+
+which exceeds 50% for n >= 23 -- a relatively small group of people. The exponential dependence on n of the number of possible birthday combinations contributes to this.
+
+What about requiring a birthday coincidence for at least 3, 4, 5 people? The answer in this case is given by much more complicated formulas, and demanding at least a 50% chance requires having a total of at least 88, 187 and 313 people respectively.
+On the figure to the left we plot the same birthday probabilities for at least 2,3,4 and 5 persons as a function of the group size n, marking the 50% level with a dashed horizontal line.
+
+A natural next question is how the total number of days y in a year (365 in the case above) affects these results? On the (animated) figure to the right we let y be a variable (assuming we could be inhabitants of another imaginary planet), and plot the same probabilities as 2-dimensional surfaces. We expect them to fall as y grows, and indeed they do, but falling less steeply with increasing y compared to varying n. This is due to the strong exponential effect that is present for n but not for y. For context, we also embed the plots for y = 365 (an Earth year), drawn with solid lines and lying on the respective surfaces.
+
+In this 3d plot, the 50% chance is represented by a horizontal plane intersecting the four surfaces and producing four curves, drawn with dotted lines. These curves can be interpreted as the plots for the group size n as a function of y, that is required in order to give at least a 50% chance of coincidence. There is no analytical way to obtain these n(y) curves, and the plots provide us with a numerical answer (and in fact for any level of probability). We see that for a 50% chance for at least 2 out of n people sharing birthdays, n increases very modestly with y, which makes sense due to the exponential effect: there are so many combinations available, that even when y = 400, n doesn’t need to exceed ~ 25 to produce a pair coincidence. The same effect carries over to the rest of the curves, with n increasing sub-linearly with y, only reaching close to linear for the remarkable case of birthday coincidence for at least 5 people. 
+
+
+**Code and data:** `1 <https://drive.google.com/open?id=17qNL90mjhDz2EaaXHcF7kpelPmuj9j85>`__

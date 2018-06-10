@@ -1,0 +1,19 @@
+Entry 28
+=========
+
+Understanding Reinforcement learning in the cartpole
+------------------------------------------------------------
+
+Devang Thakkar
+
+.. raw:: html
+
+    <video width=640 controls><source src="entry28.mp4"/></video>
+
+If the video does not play above, try downloading `from this link <entry28.mp4>`__.
+
+
+Reinforcement learning (RL) is a field of learning algorithms where, instead of learning from mapped data as in supervised machine learning, an agent learns to achieve a complex based on the rewards attained from its actions. RL algorithms start from scratch and explore their solution space to obtain feasible solutions; and then reach their goal by optimally applying exploratory and exploitative strategies. The goal of this visualization exercise is to assist a beginner in understanding how reinforcement learning works. The example chosen is the "Hello World" of RL - the cart-pole exercise, where the agent's goal is to balance a cart-pole for a certain amount of time. The conditions to be met are as follows - the cart needs to stay within a specified longitudinal area, and the pole needs to stay within a specified angle range. For this environment, the range of the the longitudinal displacement is -2.4 to +2.4, whereas the angle range is -0.21 to +0.21 radians. The simulation starts with tip of the pole slightly shifted from the center, in order to disturb the unstable equilibrium. The animation shows the trajectory of the agent during the learning process - animation stops once the agent is able to survive 100 time steps. The longitudinal displacement is plotted along the y axis while the time dimension is plotted along the x axis. The angular displacement is represent by the color of the trajectory with each of the two extremes denoted by red while the central stable region is denoted by yellow. The plot helps us understand how RL algorithms work - how they keep exploring the solution space to find a better solution even when an feasible solution has been found since the idea is not to obtain a solution but rather a state action policy that helps the agent solve similar problems with ease.
+
+
+**Code and data:** `1 <https://drive.google.com/open?id=1yYx3GXmPwaxCisRi9fE2IbWdooszHqE_>`__

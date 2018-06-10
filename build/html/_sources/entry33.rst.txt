@@ -1,0 +1,22 @@
+Entry 33
+=========
+
+Finding binding modes of soluble epoxide hydrolase fragments by molecular simulation
+------------------------------------------------------------
+
+Nathan M. Lim
+
+.. raw:: html
+
+    <video width=640 controls><source src="entry33.mp4"/></video>
+
+If the video does not play above, try downloading `from this link <entry33.mp4>`__.
+
+
+Background: My research focuses on using molecular dynamics (MD) simulations for predicting important properties related to pharmaceutical drug discovery, such as ligand binding modes and their binding affinities. In my current project,  I co-developed a novel enhanced sampling method in our toolkit called BLUES (Binding mode of Ligands Using Enhanced Sampling), which couples non-equilibrium candidate Monte Carlo (NCMC) moves within a single MD simulation. Using BLUES with MD simulations, our aim is to accelerate transitions between ligand binding modes in order to obtain the correct binding mode populations and compute their corresponding relative free energies. From here, we can rank molecules from a screen based on their calculated binding free energy and predict how molecules orient themselves when bound to the target’s binding site. These types of insights are extremely valuable for medicinal chemists during lead optimization phases where experimental data may not always be available.
+
+Figure: As part of a blind challenge from OpenEye Scientific Software, I am using BLUES to predict the binding modes and the binding free energies of a series of 47 compounds for a pharmaceutically relevant target called soluble epoxide hydrolase (sEH). In order to identify potential binding modes, BLUES with random rotational move proposals has been applied to fragment 4XH_1 over a 10ns molecular simulation. Here, the positions of the ligand heavy atoms are selected as the feature space for further analysis. A method called time-lagged independent component analysis (TICA) is then applied to extract the slow reaction coordinates. Using the first two (slowest) TICA components, the coordinates from our simulation data are transformed and projected onto the two-dimensional plane, illustrated in the figure. Using silhouette scoring, the ligand is determined to have explored 3 different binding modes (blues, pink, green) during the course of the simulation. In the figure, each simulation frame is denoted by an ‘X’ and is colored according to cluster assignments from K-means clustering. The video of the molecular simulation shows the molecule beginning in the blue binding mode and transitions several times into the pink and green binding modes via the random rotational moves proposed by BLUES. After 10ns, the pink binding mode turns out to be the most favorable binding mode. The populations of the pink, blue, green binding modes are approximately 43%, 37%, and 20% respectively. (Included supplementary video) In the same simulation time, a regular MD simulation remains stuck in the blue binding mode, confirming BLUES accelerates transitions between ligand binding modes.
+
+
+
+**Code and data:** `1 <https://drive.google.com/open?id=1ne7xYj_d4jCBgONMxa6NnFy4sHUSFd62>`__

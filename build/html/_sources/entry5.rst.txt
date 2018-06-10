@@ -1,0 +1,41 @@
+Entry 5
+=========
+
+Common Sense Climate Index Global Animation
+------------------------------------------------------------
+
+Avi Persin
+
+.. raw:: html
+
+    <video width=640 controls><source src="entry5.mp4"/></video>
+
+If the video does not play above, try downloading `from this link <entry5.mp4>`__.
+
+
+The Common Sense Climate Index (Hansen et al. 1998) is a simple measure of the degree (if any) to which practical climate change is occurring.
+
+Global warming in the 20th century amounts to only about 0.75°C (1.5°F). When a new global record temperature is set, it may exceed the previous record by only a few hundredths of a degree. What relevance, if any, do such small temperature changes have to most people?
+
+A simple measure is needed of the degree to which practically noticeable climate change is occurring. Because global warming has been predicted to result from increasing human-made greenhouse gases, it is useful to have a handy measure that allows us to keep tabs on whether noticeable climate change is actually occurring.
+
+Our Common Sense Climate Index is a composite index of climate quantities that are noticeable to the lay person. Positive values of the index refer to changes that would be associated with warming, and negative values with cooling. The index is defined locally, because that is how climate is experienced.
+
+Our index is analogous to the United States Greenhouse Climate Response Index of Karl et al. (1995). We employ different climate indicators that we hope are easily understood by the lay person and we try to define a scale that will reveal when change should be noticeable above the level of natural climate variability.
+
+Our expectation that a persistent climate index of 1 or greater represents a noticeable change is at present a hypothesis, but it is a testable hypothesis. There are regions, especially in Alaska and Siberia, where the index is near unity, and thus surveys of people's opinions could be carried out.
+
+The index is based on daily observations in the case of cities for which daily data is readily available. Other locations use only monthly mean data, which restricts the analysis to a small number of climate indicators. However, examination of results for cities with daily data shows that the index based on monthly data is usually similar to the composite index based on all climate indicators including daily data.
+
+The climate data used to compute our index are obtained from NOAA National Climate Data Center, with the primary source being the unadjusted records of Peterson and Vose (1997) . Our calculations of the index are described by Hansen et al. (1998).
+
+This global animation shows the Climate Index averaged over the last five years of analyzed temperature data (2013-2017). The animation was created using a 0.5°×0.5° grid of station-only data with a 1200km smoothing radius.
+
+The index is a composite of several everyday climate indicators. It is expected to have positive values when warming occurs and negative values for cooling. If the Index reaches and consistently maintains a value of 1 or more, the climate change should be noticeable to most people who have lived at that location for a few decades. 
+
+From a technical standpoint the animation was created using Matplotlib, numpy, Scipy, and ffmpeg.  The individual frames utilize the Matplotlib Basemap library using an Orthographic Projection. Changing the center of the plot (lat_0 and lon_0) allows us to create a rotation that doesn't favor the poles or the mid-latitudes. The collection of frames is then strung together using ffmpeg to create the final animation.
+
+https://data.giss.nasa.gov/csci/
+
+
+**Code and data:** `1 <https://drive.google.com/open?id=1JA4YcOqXH3hMA1-oR7qR4PMAJrkjKyA4>`__

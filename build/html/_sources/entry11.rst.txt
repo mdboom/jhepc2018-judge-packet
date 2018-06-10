@@ -1,0 +1,39 @@
+Entry 11
+=========
+
+Mission to Earth's neighbouring asteroids
+------------------------------------------------------------
+
+Luís F. Simões
+
+.. raw:: html
+
+    <video width=640 controls><source src="entry11.mp4"/></video>
+
+If the video does not play above, try downloading `from this link <entry11.mp4>`__.
+
+
+Visualization of a spacecraft trajectory for a mission of exploration to 17 asteroids flying in the vicinity of Earth's orbit.
+
+The Earth is seen here in blue, and the spacecraft as a red cross. A trail remains behind the spacecraft, showing its path over the preceding year. White portions of this trail correspond to rendezvous legs (spacecraft is flying towards a new asteroid), and red ones to self-fly-by legs (spacecraft is flying in the asteroid's vicinity, to launch a "penetrator" towards it). The horizontal dotted lines on the 2D plots correspond to the Earth's values: a distance of 1 AU to the Sun, and 0 degrees declination, respectively. In these plots we see how the spacecraft's orbit compares to the Earth's.
+
+This trajectory is a Lambert model solution to the trajectory design problem defined in GTOC5, the 5th edition of the Global Trajectory Optimization Competition. In it, competitors were asked to assemble a mission capable of exploring as many asteroids as possible (from among a database of 7075), given a set of spacecraft and mission constraints.
+
+The trajectory seen here was assembled in the course of the research described in the paper:
+
+    Simões L.F., Izzo D., Haasdijk E., Eiben A.E. (2017) Multi-rendezvous Spacecraft Trajectory Optimization with Beam P-ACO. In: Hu B., López-Ibáñez M. (eds) Evolutionary Computation in Combinatorial Optimization. EvoCOP 2017. Lecture Notes in Computer Science, vol 10197. Springer, Cham
+
+The code to replicate this research was uploaded to GitHub at:
+
+https://github.com/lfsimoes/beam_paco__gtoc5
+
+It offers an open source implementation of the problem model developed for the competition by the team from the European Space Agency.
+
+Although the GTOC competitions have over the years provided multiple hard benchmark problems in mission analysis, very few open implementations of solutions have emerged from it. This release aimed to help fill that gap. At the same time, to the optimization community this code offers a benchmark black-box combinatorial optimization problem, having a set of challenging features: multi-objective, bilevel, dynamic, constrained, etc. The exposed interface hides the complexities of orbital mechanics, so the code may be used by non-experts in the field.
+
+Along with the code, a Jupyter notebook was developed (link below) for generating trajectory videos. It was created to visualize the best trajectory found in the course of this research (currently, the best known from this model of the problem), and to provide a way for others who might follow up on this work to visualize the trajectories they create.
+
+(NOTE: the .mp4 file uploaded here has higher quality (1080p 60fps) than the version on YouTube.)
+
+
+**Code and data:** `1 <https://nbviewer.jupyter.org/github/lfsimoes/beam_paco__gtoc5/blob/master/traj_video.ipynb>`__

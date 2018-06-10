@@ -1,0 +1,23 @@
+Entry 18
+=========
+
+Renewable Energy in the European Union: Coming Full Circle
+------------------------------------------------------------
+
+Francesco Dalla Longa and Luuk Beurskens
+
+.. raw:: html
+
+    <video width=640 controls><source src="entry18.mp4"/></video>
+
+If the video does not play above, try downloading `from this link <entry18.mp4>`__.
+
+
+The European Union (EU) consists of twenty-eight countries closely collaborating on various subjects. In 2009 the EU Member States jointly expressed the wish to increase the share of renewable energy (RE) in their energy portfolio. Each Member State committed to a national target for its share of renewable energy in the year 2020, ranging from 10% (for Malta) to 49% (for Sweden). Altogether, the national targets ensure an overall share of 20% RE for the EU as a whole. The 2020 RE targets address all main sectors of energy: power, heat and transport.
+
+Our animated plot aims at visualizing the evolution of RE shares in each Member State of the EU between 2009 and 2016. It builds on publicly available data from the EU statistical office, Eurostat. The circles on the map represent RE targets for the year 2020, and their fill level represents the realization in the year displayed in the title. These “filled circles” diagrams provide an effective means of visualizing the gap between current realization and target, based on the eye’s ability to compare areas, and on the implicit metaphor of filling a bowl. When a country overachieves its target, the filled area bulges out beyond the boundaries of the circle. Countries are shaded based on their per capita RE consumption (on a log scale) in order to give a sense of the actual amount of renewable energy used.
+
+The visualization is realized entirely in Python 2.7. The main libraries used are matplotlib for plotting, pandas for general data manipulation and geopandas for handling geographic data. The “filled circles” diagrams are defined as a separate class, giving the programmer full access to their parameters and graphic primitives. They are built using matplotlib Circle and fill_between objects. The final animation is realized simply by first saving each year as a single frame and then concatenating the frames with matplotlib animation.FuncAnimate. 
+
+
+**Code and data:** `1 <https://drive.google.com/open?id=1OojoQ9s4f2wphnEAw2eXW6L_4xgdF16t>`__

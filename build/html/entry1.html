@@ -1,0 +1,66 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Entry 1 &#8212; John Hunter Excellence in Plotting Contest 2018  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="entry-1">
+<h1>Entry 1<a class="headerlink" href="#entry-1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="plotting-solar-fits-file-as-a-matplotlib-object">
+<h2>Plotting solar fits file as a matplotlib object<a class="headerlink" href="#plotting-solar-fits-file-as-a-matplotlib-object" title="Permalink to this headline">¶</a></h2>
+<p>Prateek Chanda</p>
+<img width=640 src="entry1.png"/><p>The data is a fits file of a solar surface image collected from SDO (Solar Data Observatory) which has been re-sampled. The figure shows the intensity of the solar surface as observed measuring along the two axes. The corners of the image have low intensity (as close as 0 intensities). The intensity of the solar plot gradually rises as we reach towards the inner part of the solar surface. There are few regions of low intensity on the solar surface indicating solar spot regions.</p>
+<p>In the corresponding function, user control has been provided to set the axes ticks, ticks position, the labels position along with provision for scientific formats for the axes ticks. Also provision for using any such fits file has been made in the corresponding function. The user can set the position of the labels anywhere as they wish. Also they get the freedom of specifying the spacing between adjacent ticks. The current axes units are in degrees. The users can specify in arcsecs also, but the unit should need to be matched with corresponding WCS object unit, otherwise it will specify an error.</p>
+<p>Using this intensity graph of the solar plot we can see which regions in the solar surface have a higher intensity ,  indicating regions having a high solar flares. Also users may wish to locate those regions in the solar plot where there are local peaks in the intensity.</p>
+<p>The code has used module called SunPy for creating the solar map object (a numpy nd array). It has also used Astropy Module to calculate the WCS object from the header of the fits file. And lastly it uses matplotlib to make the plot and use corresponding functionalities of the plot axes.</p>
+<p><strong>Code and data:</strong> <a class="reference external" href="https://drive.google.com/open?id=1npRDAQz_kRN_jyE7fGAvG2BtrZy4AHTR">1</a>, <a class="reference external" href="https://gist.github.com/prateekiiest/9fd5eee50e16d43d1b4cb42bc2295da3">2</a></p>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Thomas Caswell, Michael Droettboom, Nelle Varoquaux.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/entry1.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,44 @@
+John Hunter Excellence in Plotting Contest 2018
+-----------------------------------------------
+
+.. raw:: html
+
+    <a href="entry1.html"><img alt="Entry 1" src="thumb.entry1.png"/></a>
+    <a href="entry2.html"><img alt="Entry 2" src="thumb.entry2.png"/></a>
+    <a href="entry3.html"><img alt="Entry 3" src="thumb.entry3.png"/></a>
+    <a href="entry4.html"><img alt="Entry 4" src="thumb.entry4.png"/></a>
+    <a href="entry5.html"><img alt="Entry 5" src="thumb.entry5.png"/></a>
+    <a href="entry6.html"><img alt="Entry 6" src="thumb.entry6.png"/></a>
+    <a href="entry7.html"><img alt="Entry 7" src="thumb.entry7.png"/></a>
+    <a href="entry8.html"><img alt="Entry 8" src="thumb.entry8.png"/></a>
+    <a href="entry9.html"><img alt="Entry 9" src="thumb.entry9.png"/></a>
+    <a href="entry10.html"><img alt="Entry 10" src="thumb.entry10.png"/></a>
+    <a href="entry11.html"><img alt="Entry 11" src="thumb.entry11.png"/></a>
+    <a href="entry12.html"><img alt="Entry 12" src="thumb.entry12.png"/></a>
+    <a href="entry13.html"><img alt="Entry 13" src="thumb.entry13.png"/></a>
+    <a href="entry14.html"><img alt="Entry 14" src="thumb.entry14.png"/></a>
+    <a href="entry15.html"><img alt="Entry 15" src="thumb.entry15.png"/></a>
+    <a href="entry16.html"><img alt="Entry 16" src="thumb.entry16.png"/></a>
+    <a href="entry17.html"><img alt="Entry 17" src="thumb.entry17.png"/></a>
+    <a href="entry18.html"><img alt="Entry 18" src="thumb.entry18.png"/></a>
+    <a href="entry19.html"><img alt="Entry 19" src="thumb.entry19.png"/></a>
+    <a href="entry20.html"><img alt="Entry 20" src="thumb.entry20.png"/></a>
+    <a href="entry21.html"><img alt="Entry 21" src="thumb.entry21.png"/></a>
+    <a href="entry22.html"><img alt="Entry 22" src="thumb.entry22.png"/></a>
+    <a href="entry23.html"><img alt="Entry 23" src="thumb.entry23.png"/></a>
+    <a href="entry24.html"><img alt="Entry 24" src="thumb.entry24.png"/></a>
+    <a href="entry25.html"><img alt="Entry 25" src="thumb.entry25.png"/></a>
+    <a href="entry26.html"><img alt="Entry 26" src="thumb.entry26.png"/></a>
+    <a href="entry27.html"><img alt="Entry 27" src="thumb.entry27.png"/></a>
+    <a href="entry28.html"><img alt="Entry 28" src="thumb.entry28.png"/></a>
+    <a href="entry29.html"><img alt="Entry 29" src="thumb.entry29.png"/></a>
+    <a href="entry30.html"><img alt="Entry 30" src="thumb.entry30.png"/></a>
+    <a href="entry31.html"><img alt="Entry 31" src="thumb.entry31.png"/></a>
+    <a href="entry32.html"><img alt="Entry 32" src="thumb.entry32.png"/></a>
+    <a href="entry33.html"><img alt="Entry 33" src="thumb.entry33.png"/></a>
+    <a href="entry34.html"><img alt="Entry 34" src="thumb.entry34.png"/></a>
+    <a href="entry35.html"><img alt="Entry 35" src="thumb.entry35.png"/></a>
+    <a href="entry36.html"><img alt="Entry 36" src="thumb.entry36.png"/></a>
+    <a href="entry37.html"><img alt="Entry 37" src="thumb.entry37.png"/></a>
+    <a href="entry38.html"><img alt="Entry 38" src="thumb.entry38.png"/></a>
+    <a href="entry39.html"><img alt="Entry 39" src="thumb.entry39.png"/></a>

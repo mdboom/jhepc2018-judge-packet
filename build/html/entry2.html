@@ -1,0 +1,71 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Entry 2 &#8212; John Hunter Excellence in Plotting Contest 2018  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="entry-2">
+<h1>Entry 2<a class="headerlink" href="#entry-2" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="english-wikipedia-daily-editors-sliding-window-365-day-auto-correlation">
+<h2>English Wikipedia, daily editors: sliding-window 365-day auto-correlation<a class="headerlink" href="#english-wikipedia-daily-editors-sliding-window-365-day-auto-correlation" title="Permalink to this headline">¶</a></h2>
+<p>Ahmed Fasih</p>
+<img width=640 src="entry2.png"/><p>Consider the number of editors logging into English Wikipedia every day from 2001 to 2017. One way to predict the number of editors active tomorrow is to look at how many logged in a year ago (or a month ago, or week ago, or …).</p>
+<p>Auto-correlation is a great way to see the temporal cyclicities in a time series like this, that is, the statistical relationship between the number of users logging in each day versus some days ago. But usually when we think about auto-correlation, say for a year lag, we think about a single number, between +1 and -1, that quantifies the strength of the linear relationship between the data and its values a year ago.</p>
+<p>I was curious if the annual-lag auto-correlation varied over time: if I looked at different subsets of data, how different would the yearly auto-correlation be? In effect, I wanted to explode a scalar yearly auto-correlation to a two-dimensional array, applying the auto-correlation function over multiple sliding windows.</p>
+<p>This heatmap is the result. With it, I can ask questions like, what is the correlation between the daily editors count for the last three months of 2015 and the year before? Or for three years ending in June 2009? (Note how in the former, the two subsets of data don’t overlap in time but in the latter case, they do.)</p>
+<p>This gives a brand new way to visualize the different epochs of Wikipedia’s “rise and decline”. During the exponential-growth era of 2003 to 2007, the daily editors count was very highly correlated with that of a year ago: this is the bright-yellow triangular patch in the bottom left.</p>
+<p>Then in mid-2007, the editor engagement on English Wikipedia (and several other Wikipedias) peaked and began a steady decline. That “Peak Wiki” event shows up as a dark gash of low and anti-correlation. Any timeframe that includes “Peak Wiki” will include days where editor counts are uncorrelated (or negatively corelated) with those of a year away.</p>
+<p>Since then, over time horizons of years, the annual auto-correlation wanders up and down. Daily editor counts are somewhat correlated with those of a year away.</p>
+<p>More recently, since 2015, the steady decline in editors reversed and has been trending gently up. The first indication of this that I found came from the slightly dark column of lower auto-correlation in 2015 and extending diagonally away from it.</p>
+<p>The conclusion I draw from this heatmap is that varying the temporal window one uses to evaluate an auto-correlation can tell many stories about the underlying time series, many more than a single scalar that we often find.</p>
+<p><strong>Code and data:</strong> <a class="reference external" href="https://drive.google.com/open?id=1uozxxflnX-wF0n0KSBGxG-xMtcRdPYN2">1</a></p>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Thomas Caswell, Michael Droettboom, Nelle Varoquaux.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/entry2.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

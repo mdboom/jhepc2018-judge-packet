@@ -1,0 +1,10 @@
+Download the entries spreadsheet as a .csv file from Google. We can't include
+that in this repo because it includes e-mail addresses.
+
+To turn this into a packet:
+
+   python csv2sphinx.py jhepc2018.csv
+
+   python generate_thumbnails.py
+
+   make html

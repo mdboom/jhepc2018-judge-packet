@@ -1,0 +1,29 @@
+Entry 12
+=========
+
+An Interactive Exploration of Seattle Weather
+------------------------------------------------------------
+
+Jake VanderPlas
+
+.. raw:: html
+
+    <video width=640 controls><source src="entry12.mp4"/></video>
+
+If the video does not play above, try downloading `from this link <entry12.mp4>`__.
+
+
+This chart uses the [altair](http://altair-viz.github.io/) visualization library to create an interactive exploration of daily weather in Seattle during the years 2012-2015. The chart links time of year, temperature, precipitation amount, and precipitation type using three types of interactions:
+
+- By hovering over individual points in the top panel, the viewer can see more details about individual points.
+- By clicking and dragging on the top panel, the viewer can select a range of dates to focus on.
+- By clicking or shift-clicking on the bars in the lower panel, the viewer can focus on points by type of weather.
+
+This type of intuitive interaction with visualizations gives the user a very intuitive way to explore the relationships in complicated datasets. It lets you see, for example, the proportion of sunny and rainy days across different times of the year. This kind of linked interaction is possible to construct very quickly and succinctly using Altair's selection syntax, which is derived from the Vega-Lite visualization grammar upon which Altair is based.
+
+---
+
+That's all I have to say, but the form says my response is too short and won't allow me to submit it as-is. So I'll add some more words. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+**Code and data:** `1 <https://drive.google.com/open?id=149z5DyK_TorwBM3HCh9xFg-y7_RDFYGR>`__
