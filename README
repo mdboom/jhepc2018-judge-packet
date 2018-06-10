@@ -8,3 +8,9 @@ To turn this into a packet:
    python generate_thumbnails.py
 
    make html
+
+Requirements:
+
+   Sphinx
+   ImageMagick
+   ffmpegthumbnailer
